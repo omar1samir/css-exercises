@@ -1,6 +1,11 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /* new */
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 8px; /* from the solution */
 }
 
 .logo {
@@ -14,6 +19,15 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* ul is a flex-item and a flex-container and the same time */
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  /* i was trying to add spaces between items using justify=content */
+  /* i totally forgot about gap */
+  /* YES, i took it from the solution */
+
+  gap: 8px;
 }
 
 a {
