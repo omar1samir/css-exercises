@@ -1,15 +1,29 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align:center;/* for some reason not aligning the text from here made the images off-centred  */
+}
+
+.container{ /* new */
+  display: flex;
+  /* flex-wrap: wrap; // this is useless*/ 
+  justify-content: center;
+  gap: 52px;
 }
 
 img {
   width: 100px;
   height: 100px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  /* i thought i was going to center the title with flex
+  display: flex;
+  justify-content: center;*/
+  margin-bottom: 32px; 
 }
 
 /* do not edit this footer */
@@ -24,3 +38,17 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.plant{
+  /* text-wrap: auto; // i do not even know this propriety  */
+  box-sizing: border-box;
+  width: 200px;
+}
+
+/*  all of this is useless 
+    i can just align all text from the body selector
+*/
+/* .text{
+  text-align:center;
+} */
+
