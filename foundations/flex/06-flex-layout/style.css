@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /* new */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +20,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* new */
+  padding: 8px 16px;
 }
 
 input {
@@ -24,3 +30,52 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* new */
+/* remove the dots from the ordered list */
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 14px;
+}
+
+/* this removes the line under our links */
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  font-size:medium;
+}
+
+.footer{
+  background-color: #eeeeee;
+  padding: 2px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.left-links, .right-links{
+  display: flex;
+  gap: 16px;
+}
+/* this exercise is the best one so far */
+/* it is straight forward and not easy at the same time */
+/* I LOVE T.O.P. */
+
+/* ---AFTER LOOKING AT THE SOLUTION--- */
+/* i got every thing right, no mistakes */
+/* except for the values of gaps, margin, padding, and color */
+/* i found them out by opening the solution.html and comparing both */
+/* to get the closest version to the outcome */
+/* tbh i couldn't get the color so i copied it >:) */
+/* shit, both files are identical :O */
