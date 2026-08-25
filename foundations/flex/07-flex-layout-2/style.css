@@ -2,28 +2,93 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  /* new */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; this one is useless */
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  /* new */
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 32px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  /* new */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  /* new */
+  padding: 16px; 
+  display: flex;  
+  /* flex-direction: column; this is not declared here it should be in the ul */
+  flex-shrink: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  /* new */
+  /* display: flex; */
+  width: 300px;
+  padding: 16px;
 }
+/* new */
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;  /* remove the dots from the ordered list */
+  display: flex;
+  flex-direction: column; /* this is different than the solution but it works perfectly */
+  align-content: flex-start;
+  gap: 16px;
+
+}
+
+
+a {
+  font-size: 24px;
+  text-decoration: none;  /* this removes the line under our links */
+  color: #eee;
+}
+
+.content{
+  display: flex;
+  /* align-items: stretch; useless*/
+  flex: 1;
+}
+
+.cards{
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 32px;
+}
+
+/* now the two files are also identical */
+/* there are a lot of useless proprieties */
+/*  that when i wrote them i felt like it is a step closer to the desired look */
+/* i do not know how to determine if i should keep going with it or not */
+/* maybe it is ok to be different than the solution */
+/* i feel like it is a matter of choice and approach */
+/* it is like every developer has his own way */
+/* i like it so far */
